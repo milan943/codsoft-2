@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/9f0a6df9a3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="min-h-screen overscroll-none">
+    <!-- --------------------nav-------------------------------- -->
+    <nav
+      class="sticky top-0 z-10 flex items-center justify-between w-full p-2 text-white bg-gradient-to-tr from-gray-700 via-gray-500 to-gray-700"
+    >
+      <div class="md:h-16">
+        <img
+          class="w-16 h-full rounded-lg opacity-50"
+          src="images/Logo.jpg"
+          alt="logo"
+        />
+      </div>
+      <div class="px-4">
+        <ul class="items-center hidden gap-5 md:flex justify-evenly">
+          <a class="transition-all hover:border-b-2" href="#Home"
+            ><li>Home</li></a
+          >
+          <a class="transition-all hover:border-b-2" href="#About"
+            ><li>About</li></a
+          >
+          <a class="transition-all hover:border-b-2" href="#Blog"
+            ><li>Blog</li></a
+          >
+          <a class="transition-all hover:border-b-2" href="#Services"
+            ><li>Services</li></a
+          >
+        </ul>
+      </div>
+      <i class="mr-5 fa-solid fa-bars md:hidden"></i>
+    </nav>
+
+    <!-- --------------home----------------- -->
+    <div class="" id="Home">
+      <div class="relative w-full">
+        <img class="w-full md:h-[650px]" src="images/bgimage2.jpg" alt="" />
+        <div class="absolute p-3 mx-4 border-l-4 top-12">
+          <h1 class="font-serif text-2xl font-bold text-white md:text-5xl">
+            Creative
+          </h1>
+          <p
+            class="font-mono text-sm font-semibold text-justify md:text-white text-slate-500 md:text-lg"
+          >
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa
+            distinctio repellendus assumenda odit minus, blanditiis laborum
+            vitae, numquam commodi esse molestias tempora deleniti nulla non
+            dolores quod sequi? Quos, laborum!
+          </p>
+        </div>
+      </div>
+      <div
+        class="w-full p-4 bg-[linear-gradient(45deg,orange,red)] grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5"
+      >
+        <div
+          class="w-full p-2 transition bg-transparent border-4 rounded-lg shadow-lg hover:scale-105"
+        >
+          <h1 class="m-2 font-serif text-xl text-white">
+            <i class="fa-solid fa-code"></i> Launch Business
+          </h1>
+          <p class="font-semibold text-justify text-slate-900">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+            temporibus placeat quasi ullam hic illo inventore. Nulla quae illo
+            eos veniam! Porro cum quos exercitationem quae, doloremque ipsa ad
+            fugiat.
+          </p>
+        </div>
+        <div
+          class="w-full p-2 transition bg-transparent border-4 rounded-lg shadow-lg hover:scale-105"
+        >
+          <h1 class="m-2 font-serif text-xl text-white">
+            <i class="fa-regular fa-envelope"></i> Online Support
+          </h1>
+          <p class="font-semibold text-justify text-slate-900">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+            temporibus placeat quasi ullam hic illo inventore. Nulla quae illo
+            eos veniam! Porro cum quos exercitationem quae, doloremque ipsa ad
+            fugiat.
+          </p>
+        </div>
+        <div
+          class="w-full p-2 transition bg-transparent border-4 rounded-lg shadow-lg hover:scale-105"
+        >
+          <h1 class="m-2 font-serif text-xl text-white">
+            <i class="fa-regular fa-clock"></i> Time Management
+          </h1>
+          <p class="font-semibold text-justify text-slate-900">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+            temporibus placeat quasi ullam hic illo inventore. Nulla quae illo
+            eos veniam! Porro cum quos exercitationem quae, doloremque ipsa ad
+            fugiat.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- -----------------about---------------------- -->
+    <div id="About" class="p-10">
+      <div class="grid grid-cols-1 md:grid-cols-2">
+        <div class="flex flex-col justify-center text-justify">
+          <h1 class="font-serif text-5xl">About Us</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore
+            tenetur vitae sunt, id doloremque deserunt repellendus beatae dicta
+            voluptas eum assumenda sit! Magni voluptatibus in minima distinctio
+            hic autem fugiat, quibusdam, necessitatibus iusto accusamus
+            molestiae temporibus porro nesciunt labore ullam odit repellat
+            debitis, quia sapiente atque animi provident vitae delectus. Quod ex
+            enim, reiciendis architecto dolor earum dolorem autem animi.
+          </p>
+        </div>
+        <div class="hidden md:flex h-[80%] lg-full flex-start">
+          <img class="w-full" src="images/office.png" alt="office" />
+        </div>
+      </div>
+    </div>
+
+    <!-- -----------------------Blog-------------------------- -->
+    <div id="Blog" class="p-10">
+      <h1 class="font-serif text-5xl">Blogs</h1>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div class="relative rounded-lg shadow-lg">
+          <img src="images/services2.jpg" alt="blogs" class="p-8 rounded-lg" />
+          <button
+            class="absolute bottom-3 p-2 rounded-full right-2 bg-[linear-gradient(45deg,orange,red)]"
+          >
+            View <i class="fa-regular fa-eye"></i>
+          </button>
+        </div>
+        <div class="relative rounded-lg shadow-lg">
+          <img src="images/services3.jpg" alt="blogs" class="p-8 rounded-lg" />
+          <button
+            class="absolute bottom-3 p-2 rounded-full right-2 bg-[linear-gradient(45deg,orange,red)]"
+          >
+            View <i class="fa-regular fa-eye"></i>
+          </button>
+        </div>
+        <div class="relative rounded-lg shadow-lg">
+          <img src="images/services1.jpg" alt="blogs" class="p-8 rounded-lg" />
+          <button
+            class="absolute bottom-3 p-2 rounded-full right-2 bg-[linear-gradient(45deg,orange,red)]"
+          >
+            View <i class="fa-regular fa-eye"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------------------services-------------------------- -->
+    <div id="Services" class="p-10 bg-slate-200/50">
+      <h1 class="font-serif text-5xl">Services</h1>
+      <div class="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-3">
+        <div class="relative">
+          <img src="images/services1.jpg" alt="Services" class="rounded-full" />
+          <button
+            class="absolute bottom-3 p-2 rounded-full right-2 bg-[linear-gradient(45deg,orange,red)]"
+          >
+            View <i class="fa-regular fa-eye"></i>
+          </button>
+        </div>
+        <div class="relative">
+          <img src="images/services2.jpg" alt="Services" class="rounded-full" />
+          <button
+            class="absolute bottom-3 p-2 rounded-full right-2 bg-[linear-gradient(45deg,orange,red)]"
+          >
+            View <i class="fa-regular fa-eye"></i>
+          </button>
+        </div>
+        <div class="relative">
+          <img src="images/services3.jpg" alt="Services" class="rounded-full" />
+          <button
+            class="absolute bottom-3 p-2 rounded-full right-2 bg-[linear-gradient(45deg,orange,red)]"
+          >
+            View <i class="fa-regular fa-eye"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
